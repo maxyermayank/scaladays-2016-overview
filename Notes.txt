@@ -1,0 +1,32 @@
+http://www.slideshare.net/BrandonCornett1/continuous-integration-and-delivery?qid=8b09814e-d6fa-417f-b676-eb46456a286a&v=default&b=&from_search=14
+http://www.slideshare.net/JniorRocha1/deploy-continunous-integration-tdc-floripa-2015
+http://www.slideshare.net/martinmalek92/ci-and-cd-with-jenkins?qid=8b09814e-d6fa-417f-b676-eb46456a286a&v=qf1&b=&from_search=58
+
+
+http://www.docker.com/use-cases?mkt_tok=3RkMMJWWfF9wsRokuazPZKXonjHpfsX67OwsUaG1lMI%2F0ER3fOvrPUfGjI4DSMBiI%2BSLDwEYGJlv6SgFQ7LMMaZq1rgMXBk%3D
+
+
+Gifs:
+Long way to go: http://i.imgur.com/68Cmitv.gif
+Keep going: http://media3.giphy.com/media/3o85xs8qEtiqFPjrUc/giphy.gif
+Celebration: http://media1.giphy.com/media/FA74MFGdGKKnC/giphy.gif
+Happy Dance: http://media3.giphy.com/media/12UlfHpF05ielO/giphy.gif
+Pain: http://media4.giphy.com/media/YpmVBNubONoqs/giphy.gif
+Demo Time: http://media1.giphy.com/media/yQ9FY66ivT4is/giphy.gif
+Automation through jenkins: http://media1.giphy.com/media/CmFMWpEa4IFtS/giphy.gif
+
+About Time: http://i.imgur.com/jrRQVm2.gif
+Waiting: http://i.imgur.com/9vcToZ5.gif
+
+
+
+
+
+
+
+Estimate Frequency and Duration:
+• Several times per day
+• A few times per week
+• Every sprint
+• Twice per release cycle
+
