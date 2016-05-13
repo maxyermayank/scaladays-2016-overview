@@ -1,187 +1,356 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+<meta charset="utf-8">
 
-		<title>Scala Days 2016 Overview</title>
-		<meta name="description" content="Scala Days 2016 Overview">
-		<meta name="author" content="Mayank Patel">
+<title>Scala Days 2016 Overview</title>
+<meta name="description" content="Scala Days 2016 Overview">
+<meta name="author" content="Mayank Patel">
 
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/night.css" id="theme">
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+<!-- Code syntax highlighting -->
+<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-		<!--[if lt IE 9]>
+<!-- Printing and PDF exports -->
+<script>
+	var link = document.createElement('link');
+	link.rel = 'stylesheet';
+	link.type = 'text/css';
+	link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css'
+			: 'css/print/paper.css';
+	document.getElementsByTagName('head')[0].appendChild(link);
+</script>
+<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-	</head>
-	<body>
-		<div class="reveal">
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+</head>
+<body>
+	<div class="reveal">
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section>
+				<h2>Scala Days 2016 Overview</h2>
+			</section>
+			<section>
+				<h2>Mayank Patel</h2>
+				<h4>Application Architect</h4>
+				<h2>David Buschman</h2>
+				<h4>Technical Lead</h4>
+				<p>
+					<small><a href="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button" target="_blank">Linkedin
+							-Mayank</a> / <a href="https://twitter.com/maxy_ermayank" target="_blank">@maxy_ermayank</a></small>
+				</p>
+				<p>
+					<small><a href="https://www.linkedin.com/in/dbuschman7" target="_blank">Linkedin - David</a> / <a
+						href="https://twitter.com/maxy_ermayank" target="_blank">@lightspeed7</a></small>
+				</p>
+			</section>
+			<section>
+				<h3>Summary</h3>
+				<ul>
+					<li>2.12 Release and beyond</li>
+					<li>Dotty</li>
+					<li>New Tooling</li>
+					<li>Scala Center</li>
+					<li>Spark 2.0 Preview</li>
+					<li>Scala JS</li>
+					<li>Scala Native</li>
+				</ul>
+			</section>
+			<section>
 				<section>
-					<h2>Scala Days 2016 Overview</h2>
-				</section>
-				<section>
-					<h1>Mayank Patel</h1>
-					<h3>Application Architect</h3>
-					<p>
-						<small><a href="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button" target="_blank">Linkedin</a> / <a href="https://twitter.com/maxy_ermayank" target="_blank">@maxy_ermayank</a></small>
-					</p>
-				</section>
-				<section>
-					<h3>Summary</h3>
+					<h3>Scala 2.12</h3>
 					<ul>
-						<li>2.12 Release</li>
-						<li>Dotty</li>
-						<li>New Tooling</li>
-						<li>Scala Center</li>
-						<li>Spark 2.0 Preview</li>
-						<li>Scala JS</li>
-						<li>Scala Native</li>
+						<li>Only runs on Java 8</li>
+						<li>Smaller executable footprint - use new Java 8 JVM features</li>
+						<li>Faster execution speed</li>
+						<li>33 Features documented in Release Notes</li>
+						<li>336 PRs from 65 committers</li>
+						<li>Still on Java 6/7 ? -- 2.11 will supported for a while to come</li>
 					</ul>
 				</section>
-
 				<section>
-					<section>
-						<h3>Scala 2.12 Release</h3>
-						<ul>
-							<li>Details in @odersky <a href="http://www.slideshare.net/Odersky/scala-days-nyc-2016" target="_blank">Key Notes</a></li>
-							<li><a href="https://github.com/viktorklang/blog" target="_blank">All you want to know about Futures in Scala 2.12</a></li>
-							<li><a href="http://www.lihaoyi.com/post/StrategicScalaStylePrincipleofLeastPower.html" target="_blank">Strategic Scala Style: Principle of Least Power</a></li>
-						</ul>
-					</section>
+					<h3>Scala 2.12 Futures</h3>
+					<ul>
+						<li>Added flatten so no need to .flatMap(identity) anymore</li>
+						<li>Added zip and zipWith to join futures</li>
+						<li>New transform method, map and recover implemented with it</li>
+						<li>Easy to lift into a Try, someFuture.transform(Try(_))</li>
+						<li>New transformWith for flatMap and recoverWith</li>
+						<li>onSuccess and onFailure will be deprecated</li>
+						<li>"zero" for Future - Future.unit will replace Future.successful(())</li>
+						<li>Never completing future - Future.never to prevent memory leaks</li>
+						<li>No more use of sun.misc.Unsafe</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Scala 2.12 Links</h3>
+					<ul>
+						<li>Details in @odersky <a href="http://www.slideshare.net/Odersky/scala-days-nyc-2016" target="_blank">Key Notes</a></li>
+						<li><a href="https://github.com/viktorklang/blog" target="_blank">All you want to know about Futures in Scala 2.12</a></li>
+						<li><a href="http://www.lihaoyi.com/post/StrategicScalaStylePrincipleofLeastPower.html" target="_blank">Strategic Scala
+								Style: Principle of Least Power</a></li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h3>Scala 2.13</h3>
+					<ul>
+						<li>2.13 will focus on libraries, 2.12 focused on the compiler</li>
+						<li>Simplified Collections, more inline with Spark, better lazy</li>
+						<li>Call for Straw proposals open now, submit yours</li>
+						<li>Scala stdlib split, scala-core and scala-platform</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h3>DOTTY</h3>
+					<ul>
+						<li class="fragment"><strong>What is Dotty ?:</strong> New Scala Compiler base on Dot</li>
+						<li class="fragment"><strong>What is Dot ?:</strong> A new simple language used to prove and reason about new Scala features</li>
+						<li class="fragment"><strong>Why?:</strong></li>
+						<li class="fragment">
+							<ul>
+								<li>Allows for more "dialects" for the Scala language</li>
+								<li>Keep the language stable with features that are trust worthy</li>
+								<li>Bit more than half the size of current Scala compiler</li>
+								<li>Twice the speed of nsc (Current Scala compiler). Lot more opportunity ahead.</li>
+								<li>Dotty plugin for InteliJ IDE under development</li>
+							</ul>
+							<p>
+								<a href="https://d-d.me/talks/scaladays2016-ny-linker/#/" target="_blank"></a>
+							</p>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h3>DOT</h3>
+					<ul>
+						<li>Proven foundation for Scala</li>
+						<li>Calculus with a minimal language subset</li>
+						<li>Concludes and 8 year effort!</li>
+						<li>Encode much of the language from this instruction set</li>
+						<li>Opens the door to do much more language work with better confidence than before</li>
+						<li>Provides a way to prove type soundness for the language</li>
+						<li>higher-order unification for type constructor -- <a href="https://issues.scala-lang.org/browse/SI-2712">SI-2712</a></li>
+					</ul>
+
 				</section>
 				<section>
 					<h3>DOTTY</h3>
-					<p><strong>What is Dotty ?:</strong> New Scala Compiler</p>
-					<p><strong>Why?:</strong> </p>
-					<ul>
-						<li>Brings scala close to Bare metal</li>
-						<li>Bit more than half the size of current Scala compiler</li>
-						<li>Twice the speed of nsc (Current Scala compiler). Lot more oppornity ahead.</li>
-						<li>Dotty plugin for InteliJ IDE only</li>
-					</ul>
-					<p><a href="https://d-d.me/talks/scaladays2016-ny-linker/#/" target="_blank"></a></p>
-				</section>
-
-				<section>
-					<h3>New Tooling</h3>
-					<ul>
-						<li>Package Index - ScalaDex</li>
-						<li>ScalaFiddle</li>
-						<li>Sip/Slip Process</li>
-						<li><a href="http://scala-blitz.github.io" target="_blank">ScalaBlitz</a></li>
-						<li><a href="https://github.com/milessabin/shapeless" target="_blank">Shapeless</a></li>
-						<li><a href="http://scalameta.org" target="_blank">Scalameta (Replacement for Macros)</a></li>
-						<li><a href="https://olafurpg.github.io/scalafmt/" target="_blank">Scalafmt</a></li>
-						<li>Scala-reflact</li>
-						<li>Doc generation with dynamic linking for cross linking libraries</li>
-					</ul>
-				</section>
-				<section>
-					<section>
-						<h3><a href="https://scala.epfl.ch" target="_blank">Scala Center</a></h3>
-						<p>More Details in @heathercmiller <a href="https://speakerdeck.com/heathermiller/introducing-the-scala-center" target="_blank">Key Notes</a></p>
-						<p><strong>Main Focus: </strong></p>
+					<div>
+						<a href="http://www.slideshare.net/Odersky/scala-days-nyc-2016/26?src=clipshare" target="_blank">Martin Odersky's Key Note</a>
+					</div>
+					<div>
+						<br />
+					</div>
+					<div class='left' style='float: left; width: {{left.width'>
+						<h4>
+							<a href="http://www.slideshare.net/Odersky/scala-days-nyc-2016/27?src=clipshare" target="_blank"><b>NOT</b> moving to Dotty</a>
+						</h4>
 						<ul>
-							<li>Open Source Community</li>
-							<li>Education</li>
+							<li>Procedure Syntax</li>
+							<li>Macros</li>
+							<li>DelayedInit</li>
+							<li>General Type Protection</li>
+							<li>Early Initializers</li>
+							<li>Existential Types</li>
 						</ul>
-					</section>
-					<section>
-						<img src="images/opensource.png"/>
-					</section>
-					<section>
-						<img src="images/courses.png"/>
-					</section>
-				</section>
+					</div>
+					<div class='right' style='float: right; width: {{right.width'>
+						<h4>
+							<a href="http://www.slideshare.net/Odersky/scala-days-nyc-2016/34?src=clipshare" target="_blank">New Features in Dotty</a>
+						</h4>
+						<ul>
+							<li>Intersection Types</li>
+							<li>Union Types</li>
+							<li>Function Arity Adaptation</li>
+							<li>@static methods and fields</li>
+							<li>Named Type Parameters</li>
+							<li>Multiversal Equalities</li>
+							<li>Not blocking lazy vals</li>
+							<li>Trait parameters</li>
 
-				<section>
-					<h3><a href="https://databricks.com/blog/2016/05/11/spark-2-0-technical-preview-easier-faster-and-smarter.html?utm_campaign=Community+Edition&utm_source=hs_email&utm_medium=email&utm_content=29484210&_hsenc=p2ANqtz-9n0wlEgSDEtdwdlMfc1andhrjQIdsUqlmqxd_tMYVgs7j40jVpLeU6IDv9RW2AuRHxzdys1m-t8v7v3fJZAXHPqA2R3w&_hsmi=29484210" target="_blank">Spark 2.0 Preview</a></h3>
-				</section>
-				<section>
-					<h3><a href="https://www.scala-js.org" target="_blank">Scala JS</a></h3>
-				</section>
-				<section>
-					<h3><a href="http://www.scala-native.org" target="_blank">Scala Native</a></h3>
-				</section>
-
-				<section>
-					<h3>Session slides & Resources</h3>
-					<div style="text-align: left;">
-						<li><a href="http://www.slideshare.net/Odersky/scala-days-nyc-2016" target="_blank">Martin Odersky Keynote</a></li>
-						<li><a href="https://speakerdeck.com/heathermiller/introducing-the-scala-center" target="_blank">Heather Miller Keynote</a></li>
-						<li><a href="https://databricks.com/blog/2016/05/11/spark-2-0-technical-preview-easier-faster-and-smarter.html?utm_campaign=Community+Edition&utm_source=hs_email&utm_medium=email&utm_content=29484210&_hsenc=p2ANqtz-9n0wlEgSDEtdwdlMfc1andhrjQIdsUqlmqxd_tMYVgs7j40jVpLeU6IDv9RW2AuRHxzdys1m-t8v7v3fJZAXHPqA2R3w&_hsmi=29484210" target="_blank">Matei Zaharia Keynote (Couldn't find slides)</a></li>
-						<li><a href="https://d-d.me/talks/scaladays2016-ny-linker/#/" target="_blank">Precise Types bring Performance</a></li>
-						<li><a href="https://www.slideshare.net/slideshow/embed_code/key/fKRooAbi7ZLXam" target="_blank">Why the free Monad isn't free</a></li>
-						<li><a href="https://github.com/densh/talks/blob/517b20c30dd4aaf390785039cdd002f623eaa91e/2016-05-11-scala-goes-native.pdf" target="_blank">Scala Native</a></li>
-						<li><a href="https://www.slideshare.net/slideshow/embed_code/key/1WbQHDXoLtmK50" target="_blank">Lightbend Lagoom</a></li>
-						<li><a href="http://vkostyukov.net/slides/finagle-101/?full#Cover" target="_blank">Finagle under the hood</a></li>
-						<li><a href="http://noelmarkham.github.io/genetics-scaladays/index.html#/" target="_blank">Being creative with Genetic Algorithams</a></li>
-						<li><a href="https://www.slideshare.net/slideshow/embed_code/key/x7hgAX8uE4BuWG" target="_blank">Data in Motion: Streaming static Data Efficiency</a></li>
-						<li><a href="https://www.slideshare.net/slideshow/embed_code/key/FhJKjMRzywO0lk" target="_blank">Slick Event Sourcing</a></li>
+						</ul>
 					</div>
 				</section>
-				<section>
-					<h3>Session slides & Resources (Cont.)</h3>
-					<div style="text-align: left;">
-						<li><a href="http://scalamacros.org/paperstalks/2016-05-11-Metaprogramming20.pdf" target="_blank">Meta Programming 2.0</a></li>
-						<li><a href="http://slides.com/kailuowang/deck#/" target="_blank">Poweramp Microservices at iHeartRadio</a></li>
-						<li><a href="http://www.slideshare.net/PetrZapletal1/distributed-realtime-stream-processing-why-and-how-20" target="_blank">Distributed Real-Time Stream Processing: Why and How 2.0</a></li>
-						<li><a href="https://github.com/WadeWaldron/scaladays2016/blob/master/presentation/scaladays2016.pdf" target="_blank">Domain Driven Design and Onion Architecture in Scala</a></li>
-						<li><a href="http://noelwelsh.com/assets/downloads/scala-days-new-york-2016.tar.gz" target="_blank">The Structure of Programming Revolutions</a></li>
-						<li><a href="https://d-d.me/talks/scaladays2016-ny-linker/#/" target="_blank">Dotty Linker: Precise Types Bring Performance</a></li>
-						<li><a href="http://www.cakesolutions.net/teamblogs/this-week-in-scala-02/05/2016" target="_blank">This Week in #Scala</a></li>
-					</div>
-				</section>
+			</section>
 
+			<section>
+				<h3>New Tooling</h3>
+				<ul>
+					<li>Package Index - ScalaDex - the world of Scala libraries</li>
+					<li>ScalaFiddle - do I need to explain?</li>
+					<li>Sip/Slip Process - revamp to simplify and make better</li>
+					<li><a href="http://scala-blitz.github.io" target="_blank">ScalaBlitz</a></li>
+					<li><a href="http://scalameta.org" target="_blank">Scalameta (Replacement for Macros)</a></li>
+					<li><a href="https://olafurpg.github.io/scalafmt/" target="_blank">Scalafmt</a></li>
+					<li>Doc generation with dynamic linking for cross linking documentation across libraries</li>
+				</ul>
+			</section>
+			<section>
 				<section>
-					<h3><li><a href="https://dzone.com/articles/scala-days-nyc-2016" target="_blank">DZone: Scala Days NYC 2016: Highlights</a></li></h3>
+					<h3>
+						<a href="https://scala.epfl.ch" target="_blank">Scala Center</a>
+					</h3>
+					<ul>
+						<li>New Steward for Scala, non-profit organization at EPFL</li>
+						<li>Independently guide and support the Scala community</li>
+						<li>Coordinate and develop open source libraries and tools for the benefit of all Scala users</li>
+						<li>Provide deep, and quality, educational materials for Scala</li>
+					</ul>
+					<ul>
+						<li>Money funded/donated -- IBM, Verizon, Golden Sachs, Nitro, Lightbend, 47 degrees</li>
+					</ul>
+					<p>
+						More Details in @heathercmiller <a href="https://speakerdeck.com/heathermiller/introducing-the-scala-center" target="_blank">Key
+							Notes</a>
+					</p>
 				</section>
-			  <section>
-            <h1>Thanks</h1>
-        </section>
-			</div>
+				<section>
+					<img src="images/opensource.png" />
+				</section>
+				<section>
+					<img src="images/courses.png" />
+				</section>
+			</section>
+
+			<section>
+				<h3>
+					<a
+						href="https://databricks.com/blog/2016/05/11/spark-2-0-technical-preview-easier-faster-and-smarter.html?utm_campaign=Community+Edition&utm_source=hs_email&utm_medium=email&utm_content=29484210&_hsenc=p2ANqtz-9n0wlEgSDEtdwdlMfc1andhrjQIdsUqlmqxd_tMYVgs7j40jVpLeU6IDv9RW2AuRHxzdys1m-t8v7v3fJZAXHPqA2R3w&_hsmi=29484210"
+						target="_blank">Spark 2.0 Preview</a>
+				</h3>
+				<ul>
+					<li>File support only</li>
+					<li>Not intial Kafka support in 2.0, maybe 2.1</li>
+					<li>Based and optimzed for DataFrames and DataSets</li>
+					<Li>Aggressive optimizations improvements</Li>
+				</ul>
+			</section>
+			<section>
+				<h3>
+					<a href="https://www.scala-js.org" target="_blank">Scala JS</a>
+				</h3>
+				<ul>
+					<li>Latest 0.6.9</li>
+					<li>"native" anonymous class</li>
+					<li>js.tupleN</li>
+					<li>Junit Support</li>
+					<li>Faster code generation</li>
+				</ul>
+			</section>
+			<section>
+				<h3>
+					<a href="http://www.scala-native.org" target="_blank">Scala Native</a>
+				</h3>
+				<ul>
+					<li>A new dialect for Scala that does NOT run on the JVM</li>
+					<li>Write Scala to run on LLVM</li>
+					<li>Really cool but very limited right now</li>
+					<li>C level performance</li>
+				</ul>
+			</section>
+			<section>
+				<h3>Session slides & Resources</h3>
+				<div style="text-align: left;">
+					<li><a href="http://www.slideshare.net/Odersky/scala-days-nyc-2016" target="_blank">Martin Odersky Keynote</a></li>
+					<li><a href="https://speakerdeck.com/heathermiller/introducing-the-scala-center" target="_blank">Heather Miller Keynote</a></li>
+					<li><a
+						href="https://databricks.com/blog/2016/05/11/spark-2-0-technical-preview-easier-faster-and-smarter.html?utm_campaign=Community+Edition&utm_source=hs_email&utm_medium=email&utm_content=29484210&_hsenc=p2ANqtz-9n0wlEgSDEtdwdlMfc1andhrjQIdsUqlmqxd_tMYVgs7j40jVpLeU6IDv9RW2AuRHxzdys1m-t8v7v3fJZAXHPqA2R3w&_hsmi=29484210"
+						target="_blank">Matei Zaharia Keynote (Couldn't find slides)</a></li>
+					<li><a href="https://d-d.me/talks/scaladays2016-ny-linker/#/" target="_blank">Precise Types bring Performance</a></li>
+					<li><a href="https://www.slideshare.net/slideshow/embed_code/key/fKRooAbi7ZLXam" target="_blank">Why the free Monad isn't free</a></li>
+					<li><a href="https://github.com/densh/talks/blob/517b20c30dd4aaf390785039cdd002f623eaa91e/2016-05-11-scala-goes-native.pdf"
+						target="_blank">Scala Native</a></li>
+					<li><a href="https://www.slideshare.net/slideshow/embed_code/key/1WbQHDXoLtmK50" target="_blank">Lightbend Lagoom</a></li>
+					<li><a href="http://vkostyukov.net/slides/finagle-101/?full#Cover" target="_blank">Finagle under the hood</a></li>
+					<li><a href="http://noelmarkham.github.io/genetics-scaladays/index.html#/" target="_blank">Being creative with Genetic
+							Algorithams</a></li>
+					<li><a href="https://www.slideshare.net/slideshow/embed_code/key/x7hgAX8uE4BuWG" target="_blank">Data in Motion: Streaming
+							static Data Efficiency</a></li>
+					<li><a href="https://www.slideshare.net/slideshow/embed_code/key/FhJKjMRzywO0lk" target="_blank">Slick Event Sourcing</a></li>
+				</div>
+			</section>
+			<section>
+				<h3>Session slides & Resources (Cont.)</h3>
+				<div style="text-align: left;">
+					<li><a href="http://scalamacros.org/paperstalks/2016-05-11-Metaprogramming20.pdf" target="_blank">Meta Programming 2.0</a></li>
+					<li><a href="http://slides.com/kailuowang/deck#/" target="_blank">Poweramp Microservices at iHeartRadio</a></li>
+					<li><a href="http://www.slideshare.net/PetrZapletal1/distributed-realtime-stream-processing-why-and-how-20" target="_blank">Distributed
+							Real-Time Stream Processing: Why and How 2.0</a></li>
+					<li><a href="https://github.com/WadeWaldron/scaladays2016/blob/master/presentation/scaladays2016.pdf" target="_blank">Domain
+							Driven Design and Onion Architecture in Scala</a></li>
+					<li><a href="http://noelwelsh.com/assets/downloads/scala-days-new-york-2016.tar.gz" target="_blank">The Structure of
+							Programming Revolutions</a></li>
+					<li><a href="https://d-d.me/talks/scaladays2016-ny-linker/#/" target="_blank">Dotty Linker: Precise Types Bring Performance</a></li>
+					<li><a href="http://www.cakesolutions.net/teamblogs/this-week-in-scala-02/05/2016" target="_blank">This Week in #Scala</a></li>
+				</div>
+			</section>
+
+			<section>
+				<h3>
+					<li><a href="https://dzone.com/articles/scala-days-nyc-2016" target="_blank">DZone: Scala Days NYC 2016: Highlights</a></li>
+				</h3>
+			</section>
+			<section>
+				<h1>Thanks</h1>
+			</section>
 		</div>
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
-		<script>
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+	</div>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+	<script>
+		// Full list of configuration options available at:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls : true,
+			progress : true,
+			history : true,
+			center : true,
+			transition : 'slide', // none/fade/slide/convex/concave/zoom
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-		</script>
-	</body>
+			// Optional reveal.js plugins
+			dependencies : [ {
+				src : 'lib/js/classList.js',
+				condition : function() {
+					return !document.body.classList;
+				}
+			}, {
+				src : 'plugin/markdown/marked.js',
+				condition : function() {
+					return !!document.querySelector('[data-markdown]');
+				}
+			}, {
+				src : 'plugin/markdown/markdown.js',
+				condition : function() {
+					return !!document.querySelector('[data-markdown]');
+				}
+			}, {
+				src : 'plugin/highlight/highlight.js',
+				async : true,
+				callback : function() {
+					hljs.initHighlightingOnLoad();
+				}
+			}, {
+				src : 'plugin/zoom-js/zoom.js',
+				async : true
+			}, {
+				src : 'plugin/notes/notes.js',
+				async : true
+			} ]
+		});
+	</script>
+</body>
 </html>
