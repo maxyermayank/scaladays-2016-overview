@@ -41,16 +41,23 @@
 			</section>
 			<section>
 				<h2>Mayank Patel</h2>
-				<h4>Application Architect</h4>
-				<h2>David Buschman</h2>
-				<h4>Technical Lead</h4>
+				<h4>
+					Application Architect - <a href="https://www.oildex.com/">Oildex, a service of Transzap</a>
+				</h4>
 				<p>
-					<small><a href="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button" target="_blank">Linkedin
-							-Mayank</a> / <a href="https://twitter.com/maxy_ermayank" target="_blank">@maxy_ermayank</a></small>
+					<small><a href="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button" target="_blank">Linked In
+							</a> &nbsp;/&nbsp; <a href="https://twitter.com/maxy_ermayank" target="_blank">@maxy_ermayank</a></small>
 				</p>
+				<h2>David Buschman</h2>
+				<h4>
+					Technical Lead - <a href="http://www.timeli.io/">Timeli.io</a>
+				</h4>
 				<p>
-					<small><a href="https://www.linkedin.com/in/dbuschman7" target="_blank">Linkedin - David</a> / <a
-						href="https://twitter.com/maxy_ermayank" target="_blank">@lightspeed7</a></small>
+					<small>
+						<a href="https://www.linkedin.com/in/dbuschman7" target="_blank">Linked In</a> &nbsp;/&nbsp;
+						<a href="https://twitter.com/maxy_ermayank" target="_blank">@lightspeed7</a> &nbsp;/&nbsp;
+						<a href='http://vizualize.me/lightspeed7?r=lightspeed7' title="David Buschman's infographic CV on vizualize.me" target='_blank'>Visualize.me</a>
+				   </small>
 				</p>
 			</section>
 			<section>
@@ -70,8 +77,9 @@
 					<h3>Scala 2.12</h3>
 					<ul>
 						<li>Only runs on Java 8</li>
-						<li>Smaller executable footprint - use new Java 8 JVM features</li>
-						<li>Faster execution speed</li>
+						<li>Smaller executable footprint - uses new Java 8 JVM features</li>
+						<li>Faster execution speeds</li>
+						<li>Focus was on the compiler and "future" stability</li>
 						<li>33 Features documented in Release Notes</li>
 						<li>336 PRs from 65 committers</li>
 						<li>Still on Java 6/7 ? -- 2.11 will supported for a while to come</li>
@@ -94,10 +102,11 @@
 				<section>
 					<h3>Scala 2.12 Links</h3>
 					<ul>
-						<li>Details in @odersky <a href="http://www.slideshare.net/Odersky/scala-days-nyc-2016" target="_blank">Key Notes</a></li>
-						<li><a href="https://github.com/viktorklang/blog" target="_blank">All you want to know about Futures in Scala 2.12</a></li>
-						<li><a href="http://www.lihaoyi.com/post/StrategicScalaStylePrincipleofLeastPower.html" target="_blank">Strategic Scala
-								Style: Principle of Least Power</a></li>
+						<li>@odersky <a href="http://www.slideshare.net/Odersky/scala-days-nyc-2016" target="_blank">Key Note</a></li>
+						<li>@viktorklang <a href="https://github.com/viktorklang/blog" target="_blank">All you want to know about Futures in Scala
+								2.12</a></li>
+						<li>@li_haoyi <a href="http://www.lihaoyi.com/post/StrategicScalaStylePrincipleofLeastPower.html" target="_blank">Strategic
+								Scala Style: Principle of Least Power</a></li>
 					</ul>
 				</section>
 			</section>
@@ -107,7 +116,7 @@
 					<ul>
 						<li>2.13 will focus on libraries, 2.12 focused on the compiler</li>
 						<li>Simplified Collections, more inline with Spark, better lazy</li>
-						<li>Call for Straw proposals open now, submit yours</li>
+						<li>Call for Strawman proposals open now, submit yours</li>
 						<li>Scala stdlib split, scala-core and scala-platform</li>
 					</ul>
 				</section>
@@ -117,10 +126,10 @@
 				<section>
 					<h3>DOTTY</h3>
 					<ul>
-						<li class="fragment"><strong>What is Dotty ?:</strong> New Scala Compiler base on Dot</li>
-						<li class="fragment"><strong>What is Dot ?:</strong> A new simple language used to prove and reason about new Scala features</li>
-						<li class="fragment"><strong>Why?:</strong></li>
-						<li class="fragment">
+						<li><strong>What is Dotty ?:</strong> New Scala Compiler base on Dot</li>
+						<li><strong>What is Dot ?:</strong> A new simple language used to prove and reason about new Scala features</li>
+						<li><strong>Why?:</strong></li>
+						<li>
 							<ul>
 								<li>Allows for more "dialects" for the Scala language</li>
 								<li>Keep the language stable with features that are trust worthy</li>
@@ -215,7 +224,7 @@
 					</ul>
 					<p>
 						More Details in @heathercmiller <a href="https://speakerdeck.com/heathermiller/introducing-the-scala-center" target="_blank">Key
-							Notes</a>
+							Note</a>
 					</p>
 				</section>
 				<section>
@@ -233,7 +242,6 @@
 						target="_blank">Spark 2.0 Preview</a>
 				</h3>
 				<ul>
-					<li>File support only</li>
 					<li>Not initial Kafka support in 2.0, maybe 2.1</li>
 					<li>Based and optimzed for DataFrames and DataSets</li>
 					<Li>Aggressive optimizations improvements</Li>
@@ -259,44 +267,48 @@
 					<li>A new dialect for Scala that does NOT run on the JVM</li>
 					<li>Write Scala to run on LLVM</li>
 					<li>Really cool but very limited right now</li>
-					<li>C level performance</li>
+					<li>C level performance for some operations</li>
+					<li>Almost all stdlib features supported</li>
 				</ul>
 			</section>
 			<section>
-				<h3>Session slides & Resources</h3>
-				<div style="text-align: left;">
-					<li><a href="http://www.slideshare.net/Odersky/scala-days-nyc-2016" target="_blank">Martin Odersky Keynote</a></li>
-					<li><a href="https://speakerdeck.com/heathermiller/introducing-the-scala-center" target="_blank">Heather Miller Keynote</a></li>
-					<li><a
-						href="https://databricks.com/blog/2016/05/11/spark-2-0-technical-preview-easier-faster-and-smarter.html?utm_campaign=Community+Edition&utm_source=hs_email&utm_medium=email&utm_content=29484210&_hsenc=p2ANqtz-9n0wlEgSDEtdwdlMfc1andhrjQIdsUqlmqxd_tMYVgs7j40jVpLeU6IDv9RW2AuRHxzdys1m-t8v7v3fJZAXHPqA2R3w&_hsmi=29484210"
-						target="_blank">Matei Zaharia Keynote (Couldn't find slides)</a></li>
-					<li><a href="https://d-d.me/talks/scaladays2016-ny-linker/#/" target="_blank">Precise Types bring Performance</a></li>
-					<li><a href="https://www.slideshare.net/slideshow/embed_code/key/fKRooAbi7ZLXam" target="_blank">Why the free Monad isn't free</a></li>
-					<li><a href="https://github.com/densh/talks/blob/517b20c30dd4aaf390785039cdd002f623eaa91e/2016-05-11-scala-goes-native.pdf"
-						target="_blank">Scala Native</a></li>
-					<li><a href="https://www.slideshare.net/slideshow/embed_code/key/1WbQHDXoLtmK50" target="_blank">Lightbend Lagoom</a></li>
-					<li><a href="http://vkostyukov.net/slides/finagle-101/?full#Cover" target="_blank">Finagle under the hood</a></li>
-					<li><a href="http://noelmarkham.github.io/genetics-scaladays/index.html#/" target="_blank">Being creative with Genetic
-							Algorithams</a></li>
-					<li><a href="https://www.slideshare.net/slideshow/embed_code/key/x7hgAX8uE4BuWG" target="_blank">Data in Motion: Streaming
-							static Data Efficiency</a></li>
-					<li><a href="https://www.slideshare.net/slideshow/embed_code/key/FhJKjMRzywO0lk" target="_blank">Slick Event Sourcing</a></li>
-				</div>
-			</section>
-			<section>
-				<h3>Session slides & Resources (Cont.)</h3>
-				<div style="text-align: left;">
-					<li><a href="http://scalamacros.org/paperstalks/2016-05-11-Metaprogramming20.pdf" target="_blank">Meta Programming 2.0</a></li>
-					<li><a href="http://slides.com/kailuowang/deck#/" target="_blank">Poweramp Microservices at iHeartRadio</a></li>
-					<li><a href="http://www.slideshare.net/PetrZapletal1/distributed-realtime-stream-processing-why-and-how-20" target="_blank">Distributed
-							Real-Time Stream Processing: Why and How 2.0</a></li>
-					<li><a href="https://github.com/WadeWaldron/scaladays2016/blob/master/presentation/scaladays2016.pdf" target="_blank">Domain
-							Driven Design and Onion Architecture in Scala</a></li>
-					<li><a href="http://noelwelsh.com/assets/downloads/scala-days-new-york-2016.tar.gz" target="_blank">The Structure of
-							Programming Revolutions</a></li>
-					<li><a href="https://d-d.me/talks/scaladays2016-ny-linker/#/" target="_blank">Dotty Linker: Precise Types Bring Performance</a></li>
-					<li><a href="http://www.cakesolutions.net/teamblogs/this-week-in-scala-02/05/2016" target="_blank">This Week in #Scala</a></li>
-				</div>
+				<section>
+					<h3>Session slides &amp; Resources (1 of 2)</h3>
+					<div style="text-align: left;">
+						<li><a href="http://www.slideshare.net/Odersky/scala-days-nyc-2016" target="_blank">Martin Odersky Keynote</a></li>
+						<li><a href="https://speakerdeck.com/heathermiller/introducing-the-scala-center" target="_blank">Heather Miller Keynote</a></li>
+						<li><a
+							href="https://databricks.com/blog/2016/05/11/spark-2-0-technical-preview-easier-faster-and-smarter.html?utm_campaign=Community+Edition&utm_source=hs_email&utm_medium=email&utm_content=29484210&_hsenc=p2ANqtz-9n0wlEgSDEtdwdlMfc1andhrjQIdsUqlmqxd_tMYVgs7j40jVpLeU6IDv9RW2AuRHxzdys1m-t8v7v3fJZAXHPqA2R3w&_hsmi=29484210"
+							target="_blank">Matei Zaharia Keynote (Couldn't find slides)</a></li>
+						<li><a href="https://d-d.me/talks/scaladays2016-ny-linker/#/" target="_blank">Precise Types bring Performance</a></li>
+						<li><a href="https://www.slideshare.net/slideshow/embed_code/key/fKRooAbi7ZLXam" target="_blank">Why the free Monad isn't
+								free</a></li>
+						<li><a href="https://github.com/densh/talks/blob/517b20c30dd4aaf390785039cdd002f623eaa91e/2016-05-11-scala-goes-native.pdf"
+							target="_blank">Scala Native</a></li>
+						<li><a href="https://www.slideshare.net/slideshow/embed_code/key/1WbQHDXoLtmK50" target="_blank">Lightbend Lagoom</a></li>
+						<li><a href="http://vkostyukov.net/slides/finagle-101/?full#Cover" target="_blank">Finagle under the hood</a></li>
+						<li><a href="http://noelmarkham.github.io/genetics-scaladays/index.html#/" target="_blank">Being creative with Genetic
+								Algorithams</a></li>
+					</div>
+				</section>
+				<section>
+					<h3>Session slides & Resources (2 of 2)</h3>
+					<div style="text-align: left;">
+						<li><a href="https://www.slideshare.net/slideshow/embed_code/key/x7hgAX8uE4BuWG" target="_blank">Data in Motion: Streaming
+								static Data Efficiency</a></li>
+						<li><a href="https://www.slideshare.net/slideshow/embed_code/key/FhJKjMRzywO0lk" target="_blank">Slick Event Sourcing</a></li>
+						<li><a href="http://scalamacros.org/paperstalks/2016-05-11-Metaprogramming20.pdf" target="_blank">Meta Programming 2.0</a></li>
+						<li><a href="http://slides.com/kailuowang/deck#/" target="_blank">Poweramp Microservices at iHeartRadio</a></li>
+						<li><a href="http://www.slideshare.net/PetrZapletal1/distributed-realtime-stream-processing-why-and-how-20" target="_blank">Distributed
+								Real-Time Stream Processing: Why and How 2.0</a></li>
+						<li><a href="https://github.com/WadeWaldron/scaladays2016/blob/master/presentation/scaladays2016.pdf" target="_blank">Domain
+								Driven Design and Onion Architecture in Scala</a></li>
+						<li><a href="http://noelwelsh.com/assets/downloads/scala-days-new-york-2016.tar.gz" target="_blank">The Structure of
+								Programming Revolutions</a></li>
+						<li><a href="https://d-d.me/talks/scaladays2016-ny-linker/#/" target="_blank">Dotty Linker: Precise Types Bring Performance</a></li>
+						<li><a href="http://www.cakesolutions.net/teamblogs/this-week-in-scala-02/05/2016" target="_blank">This Week in #Scala</a></li>
+					</div>
+				</section>
 			</section>
 			<section>
 				<h3>
@@ -305,7 +317,7 @@
 			</section>
 			<section>
 				<h3>
-					<li><a href="https://dzone.com/articles/scala-days-nyc-2016" target="_blank">DZone: Scala Days NYC 2016: Highlights</a></li>
+					 Tim Spann @PaaSDev -  <li><a href="https://dzone.com/articles/scala-days-nyc-2016" target="_blank">DZone: Scala Days NYC 2016: Highlights</a></li>
 				</h3>
 			</section>
 			<section>
